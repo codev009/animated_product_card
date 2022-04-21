@@ -84,6 +84,22 @@ main {
     letter-spacing: 1px;
 }
 
+.shoe-year {
+    color: #eee;
+    font-size: 1.05rem;
+}
+
+.bottom-part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shoe-price {
+    font-weight: 400;
+    font-size: 2.3rem;
+}
+
 .right-arrow {
     width: 35px;
 }
