@@ -114,9 +114,84 @@ main {
 }
 
 .right-arrow img {
-    filter: invert(100%);
+    filter: invert(1);
+    animation: move 0.5s infinite ease alternate;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(-5px);
+    }
+    to {
+        transform: translateX(5px);
+    }
 }
 
 .face-2 {
+    background-image: linear-gradient(
+            60deg,
+            rgba(255, 255, 255, 0.15),
+            rgba(255, 255, 255, 0.05)
+    );
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    font-family: "Roboto Condensed", sans-serif;
+    margin-top: .5rem;
+}
+
+.wish {
+    color: #ffffff;
+    font-size: 1.4rem;
+}
+
+.features {
+    list-style: none;
+    margin: 3rem 0;
+    color: #eeeeee;
+    font-weight: 300;
+}
+
+.features li {
+    margin-bottom: 0.3rem;
+}
+
+.color-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.color-wrap > span {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-right: 1.3rem;
+}
+
+.colors {
+    display: flex;
+    align-items: center;
+}
+
+.color {
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    background-color: red;
+    border: 4.5px solid #ffffff;
+    margin-right: 0.6rem;
+    cursor: pointer;
+}
+
+.face-1 {
     display: none;
 }
