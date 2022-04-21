@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 
-body, button {
+body,
+button {
     font-family: "Poppins", sans-serif;
 }
 
@@ -14,4 +15,46 @@ img {
 
 a {
     text-decoration: none;
+}
+
+main {
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-image: linear-gradient(25deg, #141e30, #243b55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container {
+    position: relative;
+    color: #fff;
+    width: 440px;
+    height: 650px
+}
+
+.card-face {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right:0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.face-1 {
+    background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0.05)
+    );
+}
+
+.logo {
+    width: 50px;
+}
+
+.right-arrow {
+    width: 35px;
 }
