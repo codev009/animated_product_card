@@ -98,10 +98,23 @@ main {
 .shoe-price {
     font-weight: 400;
     font-size: 2.3rem;
+    font-family: "Roboto Condensed", sans-serif;
+    line-height: 0.95;
+    display: flex;
+}
+
+.shoe-price span {
+    font-size: 1.4rem;
+    margin-right: 0.2rem;
 }
 
 .right-arrow {
     width: 35px;
+    padding-top: 0.3rem;
+}
+
+.right-arrow img {
+    filter: invert(100%);
 }
 
 .face-2 {
