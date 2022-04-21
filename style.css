@@ -44,12 +44,28 @@ main {
     flex-direction: column;
     justify-content: space-between;
     padding: 2.5rem 3rem;
+    backface-visibility: hidden;
+    transition: 0.8s;
 }
 
 .face-1 {
     background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15),
     rgba(255, 255, 255, 0.05)
     );
+}
+
+.face-2 {
+    background-image: linear-gradient(
+            60deg,
+            rgba(255, 255, 255, 0.15),
+            rgba(255, 255, 255, 0.05)
+    );
+    transform-origin: left;
+    transform: translate(100%) rotateY(100deg);
+}
+
+.content:hover .face-2 {
+    transform: translate(0) rotateY(0deg);
 }
 
 .logo {
@@ -127,13 +143,6 @@ main {
     }
 }
 
-.face-2 {
-    background-image: linear-gradient(
-            60deg,
-            rgba(255, 255, 255, 0.15),
-            rgba(255, 255, 255, 0.05)
-    );
-}
 
 .header {
     display: flex;
@@ -228,10 +237,12 @@ main {
     transition: background-color 0.3s;
 }
 
+.buy i {
+    font-size: 0.9rem;
+}
+
 .buy:hover {
     background-color: #246997;
 }
 
-.face-1 {
-    display: none;
-}
+
